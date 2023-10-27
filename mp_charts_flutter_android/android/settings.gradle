@@ -1,1 +1,3 @@
 rootProject.name = 'mp_charts_flutter_android'
+
+include ':app'

@@ -16,6 +16,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  mp_charts_flutter_platform_interface:
+    path: ../mp_charts_flutter_platform_interface
+
 
 flutter:
   plugin:
@@ -23,3 +26,4 @@ flutter:
       android:
         package: com.mpcharts.flutter.plugin.mp_charts_flutter_android
         pluginClass: MpChartsFlutterAndroidPlugin
+        dartPluginClass: MpChartsFlutterAndroid

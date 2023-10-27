@@ -1,6 +1,7 @@
 package com.mpcharts.flutter.plugin.mp_charts_flutter_android
 
 import androidx.annotation.NonNull
+import com.mpcharts.flutter.plugin.mp_charts_flutter_android.mp_line_chart.NativeMpLineChartFactory
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
@@ -19,6 +20,10 @@ class MpChartsFlutterAndroidPlugin: FlutterPlugin, MethodCallHandler {
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
     channel = MethodChannel(flutterPluginBinding.binaryMessenger, "mp_charts_flutter_android")
     channel.setMethodCallHandler(this)
+
+      flutterPluginBinding
+       .platformViewRegistry
+       .registerViewFactory("native-view", NativeMpLineChartFactory())
   }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {

@@ -2,6 +2,7 @@ name: mp_charts_flutter
 description: A new Flutter plugin project.
 version: 0.0.1
 homepage:
+publish_to: none
 
 environment:
   sdk: '>=3.0.6 <4.0.0'
@@ -11,6 +12,12 @@ dependencies:
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
+  # mp_charts_flutter_ios:
+  #   path: ../mp_charts_flutter_ios
+  mp_charts_flutter_platform_interface:
+    path: ../mp_charts_flutter_platform_interface/
+  mp_charts_flutter_android:
+    path: ../mp_charts_flutter_android/
 
 dev_dependencies:
   flutter_test:
@@ -19,6 +26,9 @@ dev_dependencies:
 
 flutter:
   plugin:
+    implements: 
     platforms:
-      some_platform:
-        pluginClass: somePluginClass
+      android:
+        default_package: mp_chart_flutter_android
+      ios:
+        default_package: mp_charts_flutter_ios
