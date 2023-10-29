@@ -9,8 +9,7 @@ abstract class MpChartsFlutterPlatformInterface extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static MpChartsFlutterPlatformInterface _instance =
-      _PlaceholderImplementation();
+  static MpChartsFlutterPlatformInterface _instance = _PlaceholderImplementation();
 
   /// The default instance of [MpChartsFlutterPlatformInterfacePlatform] to use.
   ///

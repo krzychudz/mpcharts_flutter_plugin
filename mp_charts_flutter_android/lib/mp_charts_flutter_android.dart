@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mp_charts_flutter_platform_interface/mp_charts_flutter_platform_interface_platform_interface.dart';
+import 'package:mp_charts_flutter_platform_interface/mp_charts_flutter_platform_interface.dart';
 
 class MpChartsFlutterAndroid extends MpChartsFlutterPlatformInterface {
   @override
@@ -9,7 +9,6 @@ class MpChartsFlutterAndroid extends MpChartsFlutterPlatformInterface {
   }
 
   static void registerWith() {
-    print("HERE REGISTER WITH");
     MpChartsFlutterPlatformInterface.instance = MpChartsFlutterAndroid();
   }
 }

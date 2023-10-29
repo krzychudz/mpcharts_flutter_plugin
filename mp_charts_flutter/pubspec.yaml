@@ -12,8 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
-  # mp_charts_flutter_ios:
-  #   path: ../mp_charts_flutter_ios
+  mp_charts_flutter_ios:
+    path: ../mp_charts_flutter_ios
   mp_charts_flutter_platform_interface:
     path: ../mp_charts_flutter_platform_interface/
   mp_charts_flutter_android:
